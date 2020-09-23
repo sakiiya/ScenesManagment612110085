@@ -22,5 +22,6 @@ public class GameplayMenuControlScript3 : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync("SceneGameplay3");
         SceneManager.LoadScene("SceneMainMenu");
+        SingletonGameManager.Instance.GameScore++;
     }
 }

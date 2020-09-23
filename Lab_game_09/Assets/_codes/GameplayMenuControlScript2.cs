@@ -24,11 +24,13 @@ public class GameplayMenuControlScript2 : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync("SceneGameplay2");
         SceneManager.LoadScene("SceneMainMenu");
+        SingletonGameManager.Instance.GameScore++;
     }
 
     public void NextToGameplayButtonClick(Button button)
     {
         SceneManager.UnloadSceneAsync("SceneGameplay2");
         SceneManager.LoadScene("SceneGameplay3");
+        SingletonGameManager.Instance.GameScore++;
     }
 }
